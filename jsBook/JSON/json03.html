@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json | Coolio</title>
+</head>
+
+<body>
+
+    <ol id="people"></ol>
+
+    <script>
+
+        var people = [
+            {
+                name: "Oğuzhan",
+                age: 41
+            },
+            {
+                name: "Orhan",
+                age: 38
+            },
+            {
+                name: "Korgan",
+                age: 55
+            }
+        ]
+
+        console.log(people[0].age)
+
+        output = "";
+
+        for (var i = 0; i < people.length; i++) {
+            output += "<li>" + people[i].name + "</li>";
+        }
+
+        document.getElementById("people").innerHTML = output;
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Handlers</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <input type="text" id="username" />
+    <button>Giriş</button>
+    <label for="feedback">Feedback</label>
+    <br />
+    <div id="feedback"></div>
+
+    <script>
+
+        function testMe() {
+            // changes the color
+            feedback = document.getElementById('feedback');
+
+            feedback.textContent = 'You have pressed the button';
+        }
+
+        elInput = document.querySelector('input[type="text"]');
+        elInput.onkeydown = testMe;
+        //on ressize
+    </script>
+
+</body>
+
+</html>

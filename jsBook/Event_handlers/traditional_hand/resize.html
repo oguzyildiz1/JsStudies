@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Handlers</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <input type="text" id="username" />
+    <button>Giriş</button>
+    <label for="feedback">Feedback</label>
+    <br />
+    <div id="feedback"></div>
+
+    <script>
+
+        function changeColor() {
+            // changes the color
+            elBody = document.getElementsByTagName('body')[0];
+            elBody.style.color = 'red';
+        }
+
+        window.onresize = changeColor;
+        //on ressize
+    </script>
+
+</body>
+
+</html>
