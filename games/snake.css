@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: darkblue;
+}
+
+.game-box {
+    width: 750px;
+    height: 500px;
+    background-color: greenyellow;
+    position: relative;
+}
+
+/* #snake-full {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+} */
+
+.snake-body {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    /* position: absolute; */
+    position: absolute;
+    border: 2px solid gray;
+}
+
+#snake-head {
+    position: absoulte;
+    left: 200px;
+    top: 200px;
+}
