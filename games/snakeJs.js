@@ -22,7 +22,9 @@ var post_body_x;
 // going to write body
 
 function set_snake_body() { // başlangıç pozisyonlarını oluşturur
-    for (let i = 0; i < snake_bodies.length; i++) {
+
+
+    for (let i = 0; i < snake_bodies.length; i++) {// snake body initialization
         if (i === 0) {
             snake_bodies[i].style.left = (pos_head_x - 25) + 'px';
             snake_bodies[i].style.top = '200px';
