@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --boxes-width: 150px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+        }
+
+        .container {
+            padding: 1rem;
+            border: 1px solid #333;
+            max-width: 500px;
+            /* height: 500px; */
+            background-color: burlywood;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-content: baseline;
+        }
+
+        .boxes {
+            border: 5px solid gray;
+            box-sizing: border-box;
+            /* display: inline-block; */
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            /* margin-right: 0.5rem; */
+        }
+
+        .boxes:first-child,
+        .boxes:nth-child(4n) {
+            margin-left: 16px;
+            /* margin-left: calc(500px - (3 * var(--boxes-width) + 64px)); */
+            /* margin-left: calc(5px - 5px); */
+        }
+
+        .boxes:nth-child(3n) {
+            /* margin-left: calc((500px - 3 * var(--boxes-width)) / 2); */
+            /* margin-left: calc(5px - 5px); */
+            background-color: red;
+            margin-right: 0;
+        }
+
+
+        .second {
+            padding: 0;
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+            font-size: 0;
+        }
+
+        .sec-boxes {
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            display: inline-block;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="boxes">1</div>
+        <div class="boxes">2</div>
+        <div class="boxes">3</div>
+        <div class="boxes">3</div>
+    </div>
+</body>
+
+</html>

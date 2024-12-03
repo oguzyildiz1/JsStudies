@@ -1,0 +1,4 @@
+500px
+32 padding
+450 width
+32 margin
