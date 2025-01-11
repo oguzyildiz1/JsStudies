@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css and If Else</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: white;
+            visibility: visible;
+        }
+    </style>
+    <script>
+        function changeVisib() {
+            let heading = document.querySelector('h1');
+
+            if (heading.style.visibility == 'visible') {
+                heading.style.visibility = 'hidden';
+            } else {
+                heading.style.visibility = 'visible';
+            }
+        }
+
+        function stop() {
+            clearInterval(myInterval);
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>
+        Selamlar Dünyalı
+    </h1>
+    <button onclick="changeVisib();">
+        Click me!
+    </button>
+
+    <button id="stop" onclick="stop();">
+        Stop Animation
+    </button>
+
+    <script>
+        // 
+        document.addEventListener('DOMContentLoaded', function () {
+            var myInterval = window.setInterval(changeVisib, 500);
+            // let heading = document.querySelector('h1');
+            // heading.style.color = 'black';
+
+            // document.querySelector('#stop').addEventListener('click', function (event) {
+            //     clearInterval(myInterval);
+            // });
+
+            /*
+
+            document.querySelector('button').addEventListener('click', function (event) {
+                event.preventDefault();
+                if (heading.style.color == 'white') {
+                    alert();
+                    heading.style.color = 'yellow';
+                }
+                else {
+                    // alert('in else');
+                    heading.style.color = 'white';
+                }
+            });
+            */
+        });
+
+
+    </script>
+</body>
+
+</html>
