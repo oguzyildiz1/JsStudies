@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        canvas {
+            border: 3px solid #bbb;
+        }
+
+        .subdiv {
+            width: 320px;
+        }
+
+        .text {
+            margin: auto;
+            width: 290px;
+        }
+    </style>
+    
+    <script type="text/javascript">
+        // stores the canvas
+        var can, ctx, step = 0, delay= 20;
+
+        function init(){
+            // create canvas and assign it to the variable
+            can = document.getElementById("MyCanvas");
+            ctx = can.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.font = "22pt Times New Roman";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText("Welcome",140,100);
+        }
+    </script>
+</head>
+<body onload="init();">
+    
+
+    <canvas id="MyCanvas" width="300" height="200">
+
+    </canvas>
+</body>
+</html>
