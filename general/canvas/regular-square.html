@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas {
+            border: 3px solid #bbb;
+        }
+
+        .subdiv {
+            width: 320px;
+        }
+
+        .text {
+            margin: auto;
+            width: 290px;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    
+    <script>
+
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext('2d');
+
+        //rectangle
+
+        context.rect(188, 50, 200, 100);
+        context.fillStyle = "yellow";
+        context.fill();
+        context.lineWidth = 3;
+        context.strokeStyle = "gray";
+        context.stroke();
+
+
+
+    </script>
+</body>
+</html>

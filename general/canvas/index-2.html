@@ -18,10 +18,12 @@
             width: 290px;
         }
     </style>
+
+    <script src="https://kit.fontawesome.com/8d3703512f.js" crossorigin="anonymous"></script>
     
-    <script type="text/javascript">
+    <script>
         // stores the canvas
-        var can, ctx, step = 0, delay= 20;
+        var can, ctx, step = 0, delay= 10;
 
         function init(){
             // create canvas and assign it to the variable
@@ -30,11 +32,36 @@
             ctx.fillStyle = "red";
             ctx.font = "22pt Times New Roman";
             ctx.textAlign = "center";
-            ctx.textBaseline = "middle";
+            ctx.textBaseline = "middle"
 
             step = 0;
-            steps = can.width + 40;
-            RunTextLeftToRight();
+            // steps = can.width + 40;
+            steps = can.width - 40;
+            RunTextLeftToRight()
+        }
+
+        function RunTextLeftToRight() {
+
+            step++;
+            ctx.clearRect(0,0,can.width,can.height);
+            ctx.save();
+            ctx.translate(step, can.height/2);
+            
+            // welcome
+            ctx.fillText("Welcome", 0, 0);
+            ctx.restore();
+
+            if (step == steps) {
+
+                step = 0;
+
+            }
+
+            if (step < steps) {
+
+                var t = setTimeout('RunTextLeftToRight()', delay);
+
+            }
         }
 
         
@@ -46,5 +73,8 @@
     <canvas id="MyCanvas" width="300" height="200">
 
     </canvas>
+
+    <i style="font-size:50px;" class="fab fa-aws"></i>
+    
 </body>
 </html>
