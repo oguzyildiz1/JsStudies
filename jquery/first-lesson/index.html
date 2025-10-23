@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery 1st lesson</title>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script>
+			$(function(){
+				$('button').click(function(){
+					// $('h1').hide();
+					// $('#selam').hide();
+					$('p:first').hide();
+					// $(this).hide();
+				});
+			});
+		</script>
+	</head>
+	<body>
+	
+		<h1>My Website</h1>
+		<p>Benim sitem nasıl?</p>
+		<p id="selam">Selamlar</p>
+		<p class="reklam">Reklamlar burada</p>
+		<button id="close-btn">Click me!</button>
+	</body>
+</html>
