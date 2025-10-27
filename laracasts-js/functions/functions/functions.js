@@ -1,3 +1,14 @@
+// examples are at the test2.js
+
+// immediately invoked function
+// it is used at the beginning of file for protecting your other functions in the page 
+(function(){
+
+	// write your own functions inside...
+
+
+})();
+
 function doNothing(){ // returns undefined
 	
 }
@@ -16,7 +27,8 @@ var difference = function(a,b) {
 	return a - b;
 };
 
-
+// arrow functions
+var result = (a, b) => a * b;
 
 
 
@@ -28,3 +40,5 @@ document.querySelector('body').innerText = product;
 var product = function(3, 5) {
 	return 3 * 5;
 };
+*/
+
